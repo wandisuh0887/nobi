@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "53243db8-e19c-4ac8-a062-c88bcd894085",
+		"name": "Nobi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quote",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/quote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NjExMmI3ZS1lNTY2LTRmOTUtYmQ1Ni03OWQwNzQ3ZmMwYTYiLCJqdGkiOiJkZThlM2JhMjUwMzc1ZThkNzMyMzE1ODcyMGYwOWUwNGNmNTY3OGEwNjZhMTc4MDQ2NGU5NjllMzQ0NmYwNDRlMTBlYmQ0ZTZkMjYyNDM0YiIsImlhdCI6MTY1MDAwNzI4OC4zODA2NjIsIm5iZiI6MTY1MDAwNzI4OC4zODA2NywiZXhwIjoxNjgxNTQzMjg4LjM2ODgzNSwic3ViIjoiMSIsInNjb3BlcyI6W119.CJmaL1sKvBvW8XZIwfNSQg7c6v4l5ShtW8Ch9SKrV78m-BYo7U9-mH2w0R7k7BEGYZkUttueQU4N3R-G5BvmyE0wJUg7HO-nY9mUrAJ0sxVWxLynk9PBII5pT0Ltkd2P0tJeDR_BIYpQyQmRLxXAIZsPFyxOlFEBysfWQkrRONo-XtGqDjsKo_wnrwWhogoy5wC3r2qX8N5sbgL3L9i3-9GUYObIFkMIaAsFWPn22sqmKEXKw480-ZEtUqEM4KMn5rh03F5d7zslWlayfJIW-Eu61O0SR6vFmqMRFTOV8xz27cf3MOkKckr9ZvR1eab4VfzvtDYO2y9X0bEfxsqOCIx9ewZVuHMHpVjcK6KjcCnCvDZWy2cjTxxJEZswtV5CG1tqrXvAYxmEseXL7vJRPMIV3moc0Ssxn3gAMNJOIcKy5ebHDIXm0Sf0yA4NEO3N54ulyHYle3wiXXAmHT0xkhqqwqsORHH_kTJfy_CwaokY-EyKBPQLGQ2C--oFbVRvzqyIKcIeNAbm0nhfVJhpzmbm_m0AA708HR0kuF66PId_txFSZKqMA1RiGs8Ag-NLfu8e45c35Sn8AVxsFuTRcNsu2HtKbqFPTx0qRRvTq-VMlKhWBY7QfCsPbktY73UmHHOtw8ACUwYMspVzHkNYsN5f-t1T5K8kLuHDQABzOqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "trx_id",
+							"value": "C",
+							"type": "text"
+						},
+						{
+							"key": "trx_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Price Upload",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NjExMmI3ZS1lNTY2LTRmOTUtYmQ1Ni03OWQwNzQ3ZmMwYTYiLCJqdGkiOiJkZThlM2JhMjUwMzc1ZThkNzMyMzE1ODcyMGYwOWUwNGNmNTY3OGEwNjZhMTc4MDQ2NGU5NjllMzQ0NmYwNDRlMTBlYmQ0ZTZkMjYyNDM0YiIsImlhdCI6MTY1MDAwNzI4OC4zODA2NjIsIm5iZiI6MTY1MDAwNzI4OC4zODA2NywiZXhwIjoxNjgxNTQzMjg4LjM2ODgzNSwic3ViIjoiMSIsInNjb3BlcyI6W119.CJmaL1sKvBvW8XZIwfNSQg7c6v4l5ShtW8Ch9SKrV78m-BYo7U9-mH2w0R7k7BEGYZkUttueQU4N3R-G5BvmyE0wJUg7HO-nY9mUrAJ0sxVWxLynk9PBII5pT0Ltkd2P0tJeDR_BIYpQyQmRLxXAIZsPFyxOlFEBysfWQkrRONo-XtGqDjsKo_wnrwWhogoy5wC3r2qX8N5sbgL3L9i3-9GUYObIFkMIaAsFWPn22sqmKEXKw480-ZEtUqEM4KMn5rh03F5d7zslWlayfJIW-Eu61O0SR6vFmqMRFTOV8xz27cf3MOkKckr9ZvR1eab4VfzvtDYO2y9X0bEfxsqOCIx9ewZVuHMHpVjcK6KjcCnCvDZWy2cjTxxJEZswtV5CG1tqrXvAYxmEseXL7vJRPMIV3moc0Ssxn3gAMNJOIcKy5ebHDIXm0Sf0yA4NEO3N54ulyHYle3wiXXAmHT0xkhqqwqsORHH_kTJfy_CwaokY-EyKBPQLGQ2C--oFbVRvzqyIKcIeNAbm0nhfVJhpzmbm_m0AA708HR0kuF66PId_txFSZKqMA1RiGs8Ag-NLfu8e45c35Sn8AVxsFuTRcNsu2HtKbqFPTx0qRRvTq-VMlKhWBY7QfCsPbktY73UmHHOtw8ACUwYMspVzHkNYsN5f-t1T5K8kLuHDQABzOqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/price/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"price",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Price Low High",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NjExMmI3ZS1lNTY2LTRmOTUtYmQ1Ni03OWQwNzQ3ZmMwYTYiLCJqdGkiOiI3ZDU3ODI0ZmMwYzFhMmU0OTQyMmRkODEzOTdmYmMwYTlkNmY5NjVkN2E1NzM3MGEzMGU1ZmE1OTE2MDM5Y2RhNzI2ODlmYWQ5NGZkMWI3YyIsImlhdCI6MTY1MDA2MzQ0Ni4yMzE5NzYsIm5iZiI6MTY1MDA2MzQ0Ni4yMzE5ODYsImV4cCI6MTY4MTU5OTQ0Ni4yMTE0OCwic3ViIjoiMSIsInNjb3BlcyI6W119.H-6w3ejXR8q5gwAcD65qCNcckObOvH82wouciS5iCKk3oc99QgBImM_p0mh4QMAxy2ibM_mAgqCAu6yPYttB1g_t9r3kSua3OKQFLpRmbO9R0tmGhESOsRY9bPpAM8fa1JGJV58UZlmkgEtVYv5FKPOu_N8FQn2bL0uOYhXZAfS1spal6MVJb_fpzg4Bv6Ojhcwd1SXBZWqW26RTgOREQippYiLXCh0cBrLKO-aalRceEXSgdUmzy6n8mUDW1xr6MZpD5VMG7RA-7S6GqQfM-H_tK1vTB7kly9RinAHwxSprhmQC9EQ1Y9DHD4_URReyM3dmyBZ6O40L0cupNJ4zCoKQ4MebX0W5FiCEcAY-IVoRKTZ6abchTe4i3sUwWOpBVVV1R-y2lzMa3PXy5du6zXuvlvGuYJc0F7CUqODXeIJlQxUFt44usxXNeslzjLsSwDClHquTEasN9krVfB5gt_IFOaQS4e-5cI1D3jE2WfNSr6f6EFMr5TXC7IP9-nDS1HY8ytSqxFOiEgRz1e2yD9pMvTJIpxYPU8dM3YneLqcjR4EkBVgjLer0P8Nk9prgl-gKCSDsAMUXSgTdz-ubgDXTQTPZoXqHzT8RgJ2oN5gjh42aXMmDbWV8O258-CPyAjGQKGekku8E4ksf_zHhfDkJ2RN9eZChpMwc6Q8YeLc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "week",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2017",
+							"type": "text"
+						},
+						{
+							"key": "ticker",
+							"value": "BTC",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "USD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/price/low-high",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"price",
+						"low-high"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Price History",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NjExMmI3ZS1lNTY2LTRmOTUtYmQ1Ni03OWQwNzQ3ZmMwYTYiLCJqdGkiOiJkZThlM2JhMjUwMzc1ZThkNzMyMzE1ODcyMGYwOWUwNGNmNTY3OGEwNjZhMTc4MDQ2NGU5NjllMzQ0NmYwNDRlMTBlYmQ0ZTZkMjYyNDM0YiIsImlhdCI6MTY1MDAwNzI4OC4zODA2NjIsIm5iZiI6MTY1MDAwNzI4OC4zODA2NywiZXhwIjoxNjgxNTQzMjg4LjM2ODgzNSwic3ViIjoiMSIsInNjb3BlcyI6W119.CJmaL1sKvBvW8XZIwfNSQg7c6v4l5ShtW8Ch9SKrV78m-BYo7U9-mH2w0R7k7BEGYZkUttueQU4N3R-G5BvmyE0wJUg7HO-nY9mUrAJ0sxVWxLynk9PBII5pT0Ltkd2P0tJeDR_BIYpQyQmRLxXAIZsPFyxOlFEBysfWQkrRONo-XtGqDjsKo_wnrwWhogoy5wC3r2qX8N5sbgL3L9i3-9GUYObIFkMIaAsFWPn22sqmKEXKw480-ZEtUqEM4KMn5rh03F5d7zslWlayfJIW-Eu61O0SR6vFmqMRFTOV8xz27cf3MOkKckr9ZvR1eab4VfzvtDYO2y9X0bEfxsqOCIx9ewZVuHMHpVjcK6KjcCnCvDZWy2cjTxxJEZswtV5CG1tqrXvAYxmEseXL7vJRPMIV3moc0Ssxn3gAMNJOIcKy5ebHDIXm0Sf0yA4NEO3N54ulyHYle3wiXXAmHT0xkhqqwqsORHH_kTJfy_CwaokY-EyKBPQLGQ2C--oFbVRvzqyIKcIeNAbm0nhfVJhpzmbm_m0AA708HR0kuF66PId_txFSZKqMA1RiGs8Ag-NLfu8e45c35Sn8AVxsFuTRcNsu2HtKbqFPTx0qRRvTq-VMlKhWBY7QfCsPbktY73UmHHOtw8ACUwYMspVzHkNYsN5f-t1T5K8kLuHDQABzOqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "timeframe",
+							"value": "2017-08-14 - 2017-08-21",
+							"type": "text"
+						},
+						{
+							"key": "ticker",
+							"value": "BTC",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "IDR",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/price/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"price",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
